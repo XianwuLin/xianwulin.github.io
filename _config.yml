@@ -1,0 +1,20 @@
+title: 小武的博客
+description: 记录学习与思考
+email: linxianwusx@gmail.com
+
+# Your site's logo. Will be shown on the left top of your page.
+logo: /img/logo.svg
+
+# The RSS link of your blog.
+rss: "/feed.xml"
+
+# Theme Settings
+theme_setting:
+  # The nav links on the top right of home/page/post/blog layout.
+  nav_pages:
+    - "tags.md"
+    - "about.md"
+  # Enable code highlighting
+  code: true
+  math: true
+  mermaid: true

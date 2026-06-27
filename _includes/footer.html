@@ -1,0 +1,7 @@
+<footer class="site-footer">
+  © {{ site.time | date: "%Y" }} <a href="{{ "/" | relative_url }}">{{ site.title }}</a>
+  {%- if site.rss -%}
+  <span class="footer__sep">|</span>
+  <a href="{{ site.rss | relative_url }}" class="footer__rss" title="RSS Feed">{% include icons/rss.html %}</a>
+  {%- endif -%}
+</footer>
