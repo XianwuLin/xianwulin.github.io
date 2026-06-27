@@ -1,5 +1,6 @@
 import Comment from './components/Comment.js'
 import Archive from './components/Archive.js'
+import Toc from './components/Toc.js'
 
 import './css/main.scss'
 
@@ -9,6 +10,11 @@ if ( document.getElementById("postArchive") ) {
 
 if ( document.getElementById("commentContainer") ) {
   new Comment()
+}
+
+// Initialize table of contents on post/page layouts
+if ( document.querySelector('.post__content.content') ) {
+  new Toc()
 }
 
 initMermaid();
