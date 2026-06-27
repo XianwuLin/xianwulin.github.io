@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "重新上线博客系统"
-date: 2026-06-27 22:00
+date: 2026-06-27
 categories: 随想
 ---
 
