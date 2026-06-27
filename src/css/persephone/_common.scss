@@ -105,9 +105,26 @@ a, a:hover, a:visited, a:active {
     font-size: 0.75rem;
     margin: 0 3px;
   }
+  .footer__desc {
+    color: var(--dark);
+  }
   .footer__sep {
     margin: 0 0.25rem;
     color: var(--light-gray);
+  }
+  .footer__email {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    svg {
+      width: 14px;
+      height: 14px;
+      stroke: var(--gray);
+      transition: stroke 0.2s;
+    }
+    &:hover svg {
+      stroke: var(--dark);
+    }
   }
   .footer__rss {
     display: inline-flex;

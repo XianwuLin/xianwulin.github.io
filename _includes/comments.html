@@ -3,4 +3,6 @@
 {% include comment/static/comments.html %}
 {%- when 'disqus' -%}
 {% include comment/disqus.html %}
+{%- when 'gitalk' -%}
+{% include comment/gitalk.html %}
 {%- endcase -%}

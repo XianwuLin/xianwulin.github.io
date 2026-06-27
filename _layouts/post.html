@@ -30,10 +30,9 @@ layout: default
       {{ content | toc | img_prefix }}
     </div>
   </article>
+  <div class="post__end_sep"><span class="post__end_sep_dot"></span></div>
   {%- if site.comment.enabled -%}
   {% include comments.html -%}
-  {%- else -%}
-  {% include contact.html -%}
   {%- endif -%}
 </main>
 {%- if site.theme_setting.code or page.code -%}

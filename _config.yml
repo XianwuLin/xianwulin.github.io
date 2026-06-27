@@ -18,3 +18,16 @@ theme_setting:
   code: true
   math: true
   mermaid: true
+
+# Comment System Settings
+comment:
+  enabled: true
+  provider: "gitalk"
+  gitalk:
+    clientID: "Ov23liaA7lwpJGXSuHyl"
+    repo: "xianwulin.github.io"
+    owner: "XianwuLin"
+    admin:
+      - "XianwuLin"
+    distractionFreeMode: false
+    createIssueManually: false

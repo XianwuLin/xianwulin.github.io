@@ -102,7 +102,30 @@
 }
 .post__content {
   padding: 1.5rem 0;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
+}
+
+.post__end_sep {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 0 3rem;
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: var(--light);
+  }
+}
+
+.post__end_sep_dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--gray);
+  margin: 0 12px;
+  flex-shrink: 0;
 }
 
 .post__contact {

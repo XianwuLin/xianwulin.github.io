@@ -1,7 +1,16 @@
 <footer class="site-footer">
   © {{ site.time | date: "%Y" }} <a href="{{ "/" | relative_url }}">{{ site.title }}</a>
-  {%- if site.rss -%}
+  {%- if site.description -%}
+  <span class="footer__sep">·</span>
+  <span class="footer__desc">{{ site.description }}</span>
+  {%- endif -%}
+  {%- if site.email or site.rss -%}
   <span class="footer__sep">|</span>
+  {%- endif -%}
+  {%- if site.email -%}
+  <a href="mailto:{{ site.email }}" class="footer__email" title="Email">{% include icons/mail.html %}</a>
+  {%- endif -%}
+  {%- if site.rss -%}
   <a href="{{ site.rss | relative_url }}" class="footer__rss" title="RSS Feed">{% include icons/rss.html %}</a>
   {%- endif -%}
 </footer>
