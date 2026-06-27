@@ -4,6 +4,7 @@
 <script>
   var gitalk = new Gitalk({
     clientID: '{{ site.comment.gitalk.clientID }}',
+    clientSecret: '{{ site.comment.gitalk.clientSecret }}',
     repo: '{{ site.comment.gitalk.repo }}',
     owner: '{{ site.comment.gitalk.owner }}',
     admin: {{ site.comment.gitalk.admin | jsonify }},

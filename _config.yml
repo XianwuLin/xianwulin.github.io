@@ -25,6 +25,7 @@ comment:
   provider: "gitalk"
   gitalk:
     clientID: "Ov23liaA7lwpJGXSuHyl"
+    clientSecret: "068072d0fb5bed5d3100c3978a5edb8f77156877"
     repo: "xianwulin.github.io"
     owner: "XianwuLin"
     admin:
