@@ -81,6 +81,11 @@
 // ============================================================================
 
 @media screen and (max-width: 1200px) {
+  // Prevent parent's overflow:hidden from clipping the TOC on mobile
+  .post__content.content {
+    overflow: visible;
+  }
+
   .post__content.content > .section-nav {
     position: static;
     width: 100%;
