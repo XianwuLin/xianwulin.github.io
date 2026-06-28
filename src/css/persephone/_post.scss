@@ -4,7 +4,7 @@
   max-width: var(--content-width);
   width: 100%;
   margin: 0 auto;
-  padding: 3.5rem 1rem 2rem;
+  padding: 4.5rem 2rem 2rem;
   &:after {
     content: "";
     display: block;
@@ -31,7 +31,7 @@
     .post__archive_icon {
       position: absolute;
       width: 60%;
-      left: 20%;
+      left: 25%;
       top: 50%;
       height: 1px;
       background-color: var(--gray);
@@ -164,7 +164,7 @@
 }
 @media screen and (max-width: 600px) {
   .post__wrapper {
-    padding: 5rem 1rem 1.5rem;
+    padding: 5rem 1.5rem 1.5rem;
   }
   .post__header {
     margin-bottom: 1rem;
