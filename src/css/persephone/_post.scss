@@ -3,8 +3,8 @@
 .post__wrapper {
   max-width: var(--content-width);
   width: 100%;
-  margin: 3rem auto 1.5rem;
-  padding: 1.5rem 1rem;
+  margin: 4rem auto 2rem;
+  padding: 0 1rem;
   &:after {
     content: "";
     display: block;
@@ -60,9 +60,12 @@
   a {
     display: flex;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: capitalize;
+    color: var(--gray);
+    transition: color 0.2s;
     &:hover {
+      color: var(--dark);
       .circle-progress {
         stroke-dasharray: 120 120;
       }
@@ -80,16 +83,18 @@
   line-height: 40px;
 }
 .post__header {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
   .post__title {
-    margin: 3rem 0 1.3rem;
+    margin: 3rem 0 1rem;
+    font-family: var(--font-serif);
   }
   .page__title {
     margin-top: 1rem;
   }
   .post__meta {
     color: var(--gray);
-    font-size: 0.935rem;
+    font-size: 0.9rem;
   }
 }
 .post__relative {
@@ -101,7 +106,7 @@
   }
 }
 .post__content {
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   margin-bottom: 1rem;
 }
 
@@ -145,19 +150,18 @@
   }
   h4 {
     color: var(--grayer);
-    font-size: 1.15rem;
-    font-weight: 400;
-		margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
   }
   p {
-    font-size: 0.875rem;
+    font-size: 0.9rem;
     margin: 0 0 1rem;
   }
   .icon__list {
     text-align: left;
   }
 }
-// .section-nav styles moved to _toc.scss
 @media screen and (max-width: 600px) {
   .contact, .post__archive_path {
     width: 100%;

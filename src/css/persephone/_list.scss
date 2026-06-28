@@ -1,23 +1,30 @@
 .post__archive {
   max-width: var(--content-width);
   width: 100%;
-  margin: 3rem auto;
-  padding: 1.5rem 1rem;
+  margin: 4rem auto;
+  padding: 0 1rem;
 }
 .blog__categories {
   margin: 1rem 0 0.75rem;
   a {
-    margin: 0 2.75rem 0.75rem 0;
+    margin: 0 2rem 0.75rem 0;
+    font-size: 0.95rem;
+    color: var(--gray);
+    transition: color 0.2s;
+    &:hover {
+      color: var(--dark);
+    }
   }
 }
 .post__list_title {
-  margin: 2.75rem 0 1.25rem;
+  margin: 2.5rem 0 1rem;
+  font-family: var(--font-serif);
 }
 .post__list_item {
   list-style: none;
   padding: 0;
   width: 100%;
-  margin: 0.875rem 0;
+  margin: 0.5rem 0;
   position: relative;
   a {
     display: block;
@@ -55,7 +62,7 @@
   .archive__time {
     display: inline-block;
     width: 135px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--gray);
   }
   a, .archive__time {

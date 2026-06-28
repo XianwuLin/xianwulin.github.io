@@ -16,7 +16,6 @@ theme_setting:
     - "about.md"
   # Enable code highlighting
   code: true
-  math: true
   mermaid: true
 
 # Comment System Settings

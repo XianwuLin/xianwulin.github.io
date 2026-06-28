@@ -1,4 +1,21 @@
 <nav class="top-nav">
+  <button id="widthToggle" class="width-toggle" aria-label="Toggle content width" title="切换内容宽度：默认 / 宽 / 窄">
+    <!-- 1 column = narrow -->
+    <svg class="width-icon width-icon--narrow" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+      <rect x="5" y="3" width="6" height="10" rx="1"/>
+    </svg>
+    <!-- 2 columns = normal -->
+    <svg class="width-icon width-icon--normal" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+      <rect x="1" y="3" width="5.5" height="10" rx="1"/>
+      <rect x="9.5" y="3" width="5.5" height="10" rx="1"/>
+    </svg>
+    <!-- 3 columns = wide -->
+    <svg class="width-icon width-icon--wide" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+      <rect x="0.5" y="3" width="3.5" height="10" rx="0.8"/>
+      <rect x="6.25" y="3" width="3.5" height="10" rx="0.8"/>
+      <rect x="12" y="3" width="3.5" height="10" rx="0.8"/>
+    </svg>
+  </button>
   <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" title="切换暗色/亮色模式">
     <span class="theme-toggle__icon">🌙</span>
   </button>

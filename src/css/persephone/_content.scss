@@ -5,21 +5,9 @@
   word-wrap: break-word;
   overflow: hidden;
   color: var(--dark);
-  line-height: 1.7;
+  line-height: 1.85;
   text-align: justify;
   text-justify: inter-word;
-  /* Printing */
-  /* Typography */
-  /* Spacing */
-  /* Links */
-  /* Images */
-  /* Horizontal lines */
-  /* Headings */
-  /* Code blocks */
-  /* Tables */
-  /* Lists */
-  /* Blockquote */
-  /* Description Lists */
 }
 .content * {
   box-sizing: border-box;
@@ -55,7 +43,7 @@
 }
 .content strong,
 .content b {
-  font-weight: bold;
+  font-weight: 650;
 }
 .content em {
   font-style: italic;
@@ -67,77 +55,106 @@
 .content dl,
 .content table {
   margin-top: 0;
-  margin-bottom: 0.85em;
+  margin-bottom: 1.1em;
 }
+
+// Links — refined underline style
 .content a {
   text-decoration: none;
   background: transparent;
-  border-bottom: 1px dashed var(--gray);
-  margin: 0 0.25rem;
-  font-size: 0.9em;
-  color: var(--grayer);
+  color: var(--blue);
+  font-size: inherit;
+  margin: 0;
+  padding-bottom: 1px;
+  background-image: linear-gradient(var(--blue), var(--blue));
+  background-size: 100% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.25s ease, color 0.2s ease;
 }
 .content a:hover,
 .content a:focus,
 .content a:active {
   outline: 0;
-  border-style: solid;
+  background-size: 100% 2px;
+  color: var(--blue);
 }
+
 .content img {
   border: 0;
   max-width: 100%;
-	vertical-align: middle;
+  vertical-align: middle;
+  border-radius: var(--radius);
 }
+
+// HR — refined horizontal rule
 .content hr {
-  height: 1px;
+  height: 0;
   padding: 0;
-  margin: 1.7em 0;
-  overflow: hidden;
-  background-color: #e7e7e7;
+  margin: 2.2em 0;
+  overflow: visible;
+  background: none;
   border: none;
+  text-align: center;
+  &::after {
+    content: "···";
+    display: inline-block;
+    color: var(--gray-light);
+    font-size: 1.2rem;
+    letter-spacing: 0.5em;
+    line-height: 1;
+  }
 }
-.content hr:before,
-.content hr:after {
-  display: table;
-  content: " ";
-}
-.content hr:after {
-  clear: both;
-}
+
+// Headings — refined hierarchy
 .content h1,
 .content h2,
 .content h3,
 .content h4,
 .content h5,
 .content h6 {
-  margin-top: 1.275em;
-  margin-bottom: 0.85em;
-  font-weight: 550;
+  font-family: var(--font-serif);
+  margin-top: 1.8em;
+  margin-bottom: 0.7em;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 .content h1 {
-  font-size: 2.3em;
-  font-weight: 500;
-  margin-bottom: 1em;
+  font-size: 2.1em;
+  font-weight: 700;
+  margin-bottom: 0.6em;
+  letter-spacing: -0.02em;
 }
 .content h2 {
-  font-size: 1.75em;
+  font-size: 1.6em;
+  font-weight: 650;
+  padding-bottom: 0.35em;
+  border-bottom: 1px solid var(--light);
 }
 .content h3 {
-  font-size: 1.5em;
+  font-size: 1.35em;
+  font-weight: 600;
 }
 .content h4 {
-  font-size: 1.25em;
+  font-size: 1.15em;
+  font-weight: 600;
 }
 .content h5 {
   font-size: 1em;
+  font-weight: 600;
 }
 .content h6 {
-  font-size: 1em;
-  color: #777;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
+
+// Code blocks — refined with border-radius and better spacing
 .content code,
 .content pre {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: var(--font-mono);
   direction: ltr;
   margin: 0;
   padding: 0;
@@ -148,9 +165,14 @@
   overflow: auto;
   word-wrap: normal;
   margin: 0;
-  padding: 0.85em 1em;
-  margin-bottom: 1.275em;
+  padding: 1em 1.15em;
+  margin-bottom: 1.4em;
   background: var(--lightest);
+  border-radius: var(--radius);
+  border: 1px solid var(--light);
+  line-height: 1.6;
+  font-size: 0.9em;
+  box-shadow: var(--shadow-sm);
 }
 .content pre > code {
   display: inline;
@@ -159,7 +181,7 @@
   margin: 0;
   overflow: initial;
   line-height: inherit;
-  font-size: 0.85em;
+  font-size: 0.88em;
   white-space: pre;
   background: transparent;
 }
@@ -168,45 +190,70 @@
   content: normal;
 }
 .content code {
-  padding: 0.2em;
-  margin: 0;
-  font-size: 0.85em;
-  background-color: var(--lightest);
+  padding: 0.15em 0.35em;
+  margin: 0 0.1em;
+  font-size: 0.88em;
+  background-color: var(--lighter);
   border-radius: 3px;
-  //color: #EB5757;
+  color: var(--red);
+  white-space: nowrap;
+}
+.content pre code {
+  color: inherit;
+  white-space: pre;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border-radius: 0;
 }
 .content code:before,
 .content code:after {
-  letter-spacing: -0.2em;
-  content: "\00a0";
+  content: none;
 }
+
+// Tables — cleaner look
 .content table {
   display: table;
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
   overflow: auto;
+  margin-bottom: 1.4em;
+  font-size: 0.95em;
 }
 .content table td,
 .content table th {
-  padding: 6px 13px;
-  border: 1px solid #ddd;
+  padding: 10px 16px;
+  border: none;
+  border-bottom: 1px solid var(--light);
+}
+.content table thead th {
+  border-bottom-width: 2px;
 }
 .content table tr {
-  background-color: #fff;
-  border-top: 1px solid var(--gray-light);
+  background-color: transparent;
+  border-top: none;
+}
+.content table tbody tr:hover {
+  background-color: var(--lightest);
 }
 .content table tr:nth-child(2n) {
   background-color: var(--lightest);
 }
 .content table th {
-  font-weight: bold;
+  font-weight: 650;
+  color: var(--grayer);
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
+
+// Lists — better spacing
 .content ul,
 .content ol {
   padding: 0;
   margin: 0;
-  margin-bottom: 0.85em;
+  margin-bottom: 1.1em;
   padding-left: 2em;
 }
 .content ul ol,
@@ -219,12 +266,26 @@
 .content ol ol {
   list-style-type: lower-roman;
 }
+.content li {
+  margin-bottom: 0.25em;
+}
+.content li > p {
+  margin-bottom: 0.5em;
+}
+
+// Blockquote — elegant with background tint
 .content blockquote {
   margin: 0;
-  margin-bottom: 0.85em;
-  padding: 0 15px;
-  color: var(--gray);
-  border-left: 4px solid var(--light);
+  margin-bottom: 1.3em;
+  padding: 0.9em 1.2em;
+  color: var(--grayer);
+  background: var(--lightest);
+  border-left: 3px solid var(--blue);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-style: italic;
+}
+.content blockquote p:last-child {
+  margin-bottom: 0;
 }
 .content blockquote:first-child {
   margin-top: 0;
@@ -232,6 +293,8 @@
 .content blockquote:last-child {
   margin-bottom: 0;
 }
+
+// Description Lists
 .content dl {
   padding: 0;
 }
@@ -249,7 +312,7 @@
   margin-left: 0;
 }
 .content .mermaid {
-  margin-bottom: 0.85rem;
+  margin-bottom: 1.1em;
 }
 .content sup {
   .footnote {
@@ -257,12 +320,13 @@
   }
 }
 .content .footnotes {
-  margin: 2rem 0 0;
-  padding: 1rem 0;
+  margin: 2.5rem 0 0;
+  padding: 1.2rem 0;
   position: relative;
   color: var(--gray);
   width: 100%;
   text-align: left;
+  font-size: 0.9rem;
   &:before {
     @include pseudo();
     left: 0;

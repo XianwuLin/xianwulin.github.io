@@ -35,13 +35,15 @@
 
   .section-nav__item a {
     display: block;
-    padding: 4px 12px;
+    padding: 5px 12px;
     color: var(--gray);
-    font-size: 0.875rem;
+    font-size: 0.85rem;
     border-left: 2px solid transparent;
     border-bottom: none;
+    border-radius: 0 4px 4px 0;
     transition: color 0.2s, border-color 0.2s, background-color 0.2s;
     text-decoration: none;
+    background-image: none;
 
     &:hover {
       color: var(--dark);
@@ -52,26 +54,26 @@
   // Indent by heading level
   .section-nav__item--h1 a {
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     padding-left: 8px;
   }
   .section-nav__item--h2 a {
-    padding-left: 12px;
+    padding-left: 16px;
     font-weight: 500;
   }
   .section-nav__item--h3 a {
-    padding-left: 24px;
-    font-size: 0.825rem;
+    padding-left: 28px;
+    font-size: 0.8rem;
   }
   .section-nav__item--h4 a {
-    padding-left: 36px;
-    font-size: 0.8rem;
+    padding-left: 40px;
+    font-size: 0.78rem;
   }
 
   // Active state — left border accent
   .section-nav__item.active > a {
     color: var(--dark);
-    border-left-color: var(--gray);
+    border-left-color: var(--blue);
     background-color: var(--lightest);
   }
 }
