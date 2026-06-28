@@ -19,7 +19,6 @@ layout: default
         <div class="post__excerpt">
           {{ post.excerpt | markdownify | strip_html | truncate: 100 }}
         </div>
-        <div class="post__more_arrow"></div>
       </a>
     </article>
   {%- endfor -%}

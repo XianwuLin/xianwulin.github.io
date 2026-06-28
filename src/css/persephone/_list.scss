@@ -1,8 +1,8 @@
 .post__archive {
   max-width: var(--content-width);
   width: 100%;
-  margin: 4rem auto;
-  padding: 0 1rem;
+  margin: 0 auto;
+  padding: 3rem 1rem 4rem;
 }
 .blog__categories {
   margin: 1rem 0 0.75rem;
@@ -74,10 +74,23 @@
     }
   }
 }
-@media screen and (max-width: 700px) {
-  .post__list_item .archive__time {
-    display: block;
-    margin-bottom: 0.35rem;
+@media screen and (max-width: 600px) {
+  .post__archive {
+    padding: 5rem 1rem 2.5rem;
+  }
+  .post__list_title {
+    margin: 1.5rem 0 0.75rem;
+  }
+  .post__list_item {
+    margin: 0.6rem 0;
+    a {
+      padding: 0.5rem 0;
+    }
+    .archive__time {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-size: 0.8rem;
+    }
   }
 }
 .hover-reveal {

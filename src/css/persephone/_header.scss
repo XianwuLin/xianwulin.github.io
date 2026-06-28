@@ -119,7 +119,7 @@ a.nav-link {
 }
 .top-nav {
   position: fixed;
-  right: 3rem;
+  right: 1rem;
   top: 2rem;
   z-index: 11;
   text-align: right;
@@ -212,8 +212,23 @@ a.nav-link {
   }
   .top-nav {
     position: absolute;
-    right: 1.5rem;
-    top: 2rem;
-    padding-left: 40px
+    right: 2.8rem;
+    top: 1.65rem;
+    gap: 0;
+    padding-left: 0;
+    a {
+      margin: 0 0 0 0.4rem;
+      font-size: 0.85rem;
+    }
+  }
+  .width-toggle {
+    display: none;
+  }
+  .theme-toggle {
+    font-size: 1rem;
+    padding: 4px 5px;
+  }
+  a.nav-link {
+    padding: 5px 0.15rem;
   }
 }

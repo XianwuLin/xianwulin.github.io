@@ -17,6 +17,11 @@ body, html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+@media screen and (max-width: 600px) {
+  body, html {
+    font-size: 15.5px;
+  }
+}
 body {
   min-height: 100vh;
   overflow-x: hidden;

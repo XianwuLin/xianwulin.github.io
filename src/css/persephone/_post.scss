@@ -3,8 +3,8 @@
 .post__wrapper {
   max-width: var(--content-width);
   width: 100%;
-  margin: 4rem auto 2rem;
-  padding: 0 1rem;
+  margin: 0 auto;
+  padding: 3.5rem 1rem 2rem;
   &:after {
     content: "";
     display: block;
@@ -86,7 +86,7 @@
   margin-bottom: 1.5rem;
   text-align: center;
   .post__title {
-    margin: 3rem 0 1rem;
+    margin: 1.5rem 0 1rem;
     font-family: var(--font-serif);
   }
   .page__title {
@@ -163,6 +163,22 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .post__wrapper {
+    padding: 5rem 1rem 1.5rem;
+  }
+  .post__header {
+    margin-bottom: 1rem;
+    .post__title {
+      margin: 1.25rem 0 0.75rem;
+      font-size: 1.6rem;
+    }
+    .post__meta {
+      font-size: 0.8rem;
+    }
+  }
+  .post__content {
+    padding: 1rem 0;
+  }
   .contact, .post__archive_path {
     width: 100%;
   }
