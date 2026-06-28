@@ -1,7 +1,7 @@
 @use "minxins" as *;
 
 .logo {
-  position: fixed;
+  position: absolute;
   left: 3rem;
   top: 2rem;
   z-index: 11;
@@ -30,7 +30,7 @@
   width: 40px;
   height: 40px;
   margin: 10px;
-  position: fixed;
+  position: absolute;
   left: 3rem;
   bottom: 2rem;
   margin-top: -20px;
@@ -118,7 +118,7 @@ a.nav-link {
   }
 }
 .top-nav {
-  position: fixed;
+  position: absolute;
   right: 1rem;
   top: 2rem;
   z-index: 11;
